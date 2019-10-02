@@ -1,5 +1,10 @@
 # ansible-vcenter
 
+Playbook for deploying a ova template over VMware vCenter (vSphere).
+Default Image: bionic-server-cloudimg-amd64
+
+The Image will be downloaded by ansible playbook.
+
 ## Required Variables
 
 Path: roles/vcenter/defaults/main.yml
