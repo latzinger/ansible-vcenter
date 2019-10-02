@@ -1,0 +1,24 @@
+---
+- hosts: localhost
+  connection: local
+  gather_facts: no
+  vars_prompt:
+    - name: "vm_name"
+      prompt: "Enter VM Name"
+      private: no
+      default: "Ubuntu 10.04 (via ansible)"
+    - name: "vm_password"
+      prompt: "Enter VM Password"
+      private: no
+      default: "Pa$$w0rd"
+    - name: "vm_hostname"
+      prompt: "Enter VM Hostname"
+      private: no
+      default: "ubuntu1804-ansible"
+  roles:
+   - vcenter
+
+- hosts: vms
+  tasks:
+   - name: Print Setup
+     setup:
