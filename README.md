@@ -1,9 +1,9 @@
 # ansible-vcenter
 
-Playbook for deploying a ova template over VMware vCenter (vSphere).
-Default Image: bionic-server-cloudimg-amd64
+This is an Ansible Project for deploying a Ubunut Bionic Server OVA-Template on the VMware vCenter.
+The OVA-Image will be donwloaded automatically.
 
-The Image will be downloaded by ansible playbook.
+* Deploying Ubuntu Bionic Server on the vCenter
 
 ## Required Variables
 
